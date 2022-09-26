@@ -1,4 +1,4 @@
-gigit package com.example.layoutnavigation
+package com.example.layoutnavigation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
