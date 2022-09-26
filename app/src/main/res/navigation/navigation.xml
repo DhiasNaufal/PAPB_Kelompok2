@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_home_screen" >
         <action
             android:id="@+id/action_homeScreen_to_secondPage2"
-            app:destination="@id/secondPage" />
+            app:destination="@id/secondPage"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/secondPage"
@@ -20,11 +24,12 @@
         android:label="fragment_second_page"
         tools:layout="@layout/fragment_second_page" >
         <action
-            android:id="@+id/action_secondPage_to_thirdPage"
-            app:destination="@id/thirdPage" />
-        <action
             android:id="@+id/action_secondPage_to_homeScreen"
-            app:destination="@id/homeScreen" />
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/homeScreen" />
+        <action
+            android:id="@+id/action_secondPage_to_thirdPage2"
+            app:destination="@id/thirdPage" />
     </fragment>
     <fragment
         android:id="@+id/thirdPage"
@@ -33,6 +38,7 @@
         tools:layout="@layout/fragment_third_page" >
         <action
             android:id="@+id/action_thirdPage_to_secondPage"
-            app:destination="@id/secondPage" />
+            app:destination="@id/secondPage"
+            app:popUpTo="@id/secondPage" />
     </fragment>
 </navigation>
