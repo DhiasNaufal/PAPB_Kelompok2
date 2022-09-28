@@ -6,23 +6,23 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
-    private Button button;
-
+class MainActivity : AppCompatActivity(),View.OnClickListener {
+    private lateinit var btnIntent : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            override public void onClick(View v) {
-                openMainActivity2();
+        btnIntent = findViewById(R.id.button)
+        btnIntent.setOnClickListener(this)
+        }
+    override fun onClick(v: View?){
+        if(v!=null){
+            when(v.id){
+                R.id.button -> run {
+                    val intentBiasa = Intent(this@MainActivity, MainActivity2::class.java)
+                    startActivity(intentBiasa)
+                }
             }
-        });
-    }
-
-    public class openMainActivity2 {
-        Intent intent = new Intent(this, MainActivity2.class)
-                startActivity(intent);
+        }
     }
 }

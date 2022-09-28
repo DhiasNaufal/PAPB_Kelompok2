@@ -4,23 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="156dp"
         android:layout_height="70dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="272dp"
         android:text="This is a second page "
-        android:textSize="20dp"
         android:textColor="#b967ff"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="270dp" />
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Last"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="375dp" />
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="144dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
