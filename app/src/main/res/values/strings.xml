@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Onboarding</string>
+
+    //Headings
+    <string name="heading_one">Quick &amp; Easy Payments</string>
+    <string name="heading_two">Instant Notifications</string>
+    <string name="heading_three">Cashless Payment</string>
+    <string name="heading_fourth">Pay Anywhere</string>
+
+    //Description
+    <string name="desc_one">Aplikasi pembayaran yang mudah digunakan dan aman</string>
+    <string name="desc_two">Notifikasi yang ditampilkan bagus dan ringkas</string>
+    <string name="desc_three">Pembayaran yang dilakukan mudah dan tidak ribet</string>
+    <string name="desc_fourth">Metode Pembayaran bisa menggunakan QRIS, GoPay, DANA, BCA, BNI, Mandiri</string>
+
+</resources>
