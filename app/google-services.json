@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463851752302",
+    "project_id": "login-page-1097d",
+    "storage_bucket": "login-page-1097d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463851752302:android:716de9ed43360e8e894f7f",
+        "android_client_info": {
+          "package_name": "com.example.fitness_timer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463851752302-mpv0u1utpuq7ve5npbqm2uo7r6m85cnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMbRXmxoh87YLcFYByI2i0gQwD13f3w1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463851752302-mpv0u1utpuq7ve5npbqm2uo7r6m85cnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
