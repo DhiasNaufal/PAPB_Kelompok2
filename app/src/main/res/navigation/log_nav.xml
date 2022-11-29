@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/log_nav"
+    app:startDestination="@id/logList">
+
+    <fragment
+        android:id="@+id/logList"
+        android:name="com.example.fitnesskotlin.fragments.List.LogList"
+        android:label="fragment_log_list"
+        tools:layout="@layout/fragment_log_list" >
+        <action
+            android:id="@+id/action_logList_to_logAdd"
+            app:destination="@id/logAdd" />
+    </fragment>
+    <fragment
+        android:id="@+id/logAdd"
+        android:name="com.example.fitnesskotlin.fragments.add.LogAdd"
+        android:label="fragment_log_add"
+        tools:layout="@layout/fragment_log_add" >
+        <action
+            android:id="@+id/action_logAdd_to_logList"
+            app:destination="@id/logList" />
+    </fragment>
+</navigation>

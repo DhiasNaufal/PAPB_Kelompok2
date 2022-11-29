@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val StartButton = findViewById<Button>(R.id.button)
+
         StartButton.setOnClickListener{
             val Intent = Intent(this, GymActivity::class.java)
             startActivity(Intent)
