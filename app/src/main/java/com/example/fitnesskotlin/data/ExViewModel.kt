@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 class ExViewModel(application:Application):AndroidViewModel(application) {
 
-    private val readAllData: LiveData<List<exerciseLog>>
+    val readAllData: LiveData<List<exerciseLog>>
     private val repository: exerciseRepository
 
     init {
