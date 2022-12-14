@@ -13,12 +13,14 @@ class ViewHolder(inflater: LayoutInflater, parent: ViewGroup):
     private var txtTitle: TextView? = null
     private var txtRep: TextView? = null
     private var txtSet: TextView? = null
+    private var imgButton:ImageView? =null
 
     init {
         imgView = itemView.findViewById(R.id.image_view)
         txtTitle = itemView.findViewById(R.id.Title_view)
         txtRep= itemView.findViewById(R.id.Rep_view)
         txtSet = itemView.findViewById(R.id.Set_view)
+        imgButton = itemView.findViewById(R.id.ImgButton)
     }
 
     fun bind(data: GymData){
@@ -26,6 +28,7 @@ class ViewHolder(inflater: LayoutInflater, parent: ViewGroup):
         txtTitle?.text = data.txtTitle
         txtRep?.text = data.txtRep
         txtSet?.text = data.txtSet
+        imgButton?.setImageResource(data.imgButton)
 
     }
 

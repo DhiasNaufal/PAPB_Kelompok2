@@ -59,7 +59,7 @@
                     android:layout_height="90dp"
                     android:layout_margin="15dp"
                     android:contentDescription="Log_gym"
-                    app:srcCompat="@drawable/dumbbell" />
+                    app:srcCompat="@drawable/dumbell1" />
 
             </LinearLayout>
 
