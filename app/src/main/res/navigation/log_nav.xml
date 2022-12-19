@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/logAdd"
-        android:name="com.example.fitnesskotlin.fragments.add.LogAdd"
+        android:name="com.example.fitnesskotlin.fragments.List.add.LogAdd"
         android:label="fragment_log_add"
         tools:layout="@layout/fragment_log_add" >
         <action
